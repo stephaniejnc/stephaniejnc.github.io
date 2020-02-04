@@ -51,24 +51,49 @@ ol, ul {
 
 
 .flex-item {
-    margin: 1.1%;
-    width: 30%;
-    height: 30vw;
-    margin-top: 10px;
-    border-radius: 5%;
-    border-style: dotted; 
-    border-width: 0.2cm;
+  margin: 1.1%;
+  width: 30%;
+  height: 30vw;
+  margin-top: 10px;
+  border-radius: 5%;
+  border-color: lightcoral;
+  border-style: dotted;
+  border-width: 0.2cm;
 
-    line-height: 40px;
-    color: #444444;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 0.5s;
-    
+  line-height: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s;
+
 }
+
+.link {
+  overflow: hidden;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.devpost {
+  background-image: url('http://nealrs.github.io/devpost-follow-button/icon/devpost-512.png');
+}
+
+.github {
+  background-image: url('images/github-brands.svg');
+  width: 45px;
+  height: 45px;
+}
+
+#moody, #mentr, #husky {
+  color: #444444;
+  border-style: dotted; 
+  font-weight: bold;
+}
+
 
 #moody.flex-item:hover {
   background-color: #d3f6f3;
@@ -113,6 +138,16 @@ ol, ul {
     justify-content: center;
 }
 
+.fill {
+  overflow: hidden;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('images/name.png');
+  width: auto;
+  height: 200px;
+}
+
 .space {
     height: 100px;
 }
@@ -147,84 +182,16 @@ body {
   
   .topnav a.active {
     color: black;
-    background-color: #fffbbe;
     border-radius: 2em;
+    text-decoration: underline;
   }
   
   .topnav .icon {
     display: none;
   }
-  
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-    .flex-container {
-      flex-direction: column;
-      text-align: center;
-    }
-    .flex-item {
-      width: 94%;
-      height: 100%;
-      margin-top: 5%;
-      margin-bottom: 5%;
 
-    }
-    .words {
-      font-size: 18px;
-    }
-    img {
-      width: 200%;
-      height: 100%;
-    }  
-    .flex-item-picture {
-      margin-top: 0px;
-      width: 80%;
-      margin-bottom: 100px;
-      display: inline-block;
-    }
-    .flex-item-hello {
-      width: 80%;
-      height: 300px;
-      display: inline-block;
-    }
-    .flex-item-hello .hello-world {
-      text-align: center;
-      display: inline-block;
-      font-size: 13px;
-      letter-spacing: 0.8em;
-    }
-    #intro-small {
-      display: inline;
-      font-size: 16px;
-    }
-    #intro {
-      display: none;
-    }
-    
-  }
-  
   #intro-small {
     display: none;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {
-      position: relative;
-    }
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-      margin-left: 8%;
-    }
   }
 
   img {
@@ -238,16 +205,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
-  }
-
-  .fill {
-    overflow: hidden;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('images/name.png');
-    width: 100%;
-    height: 200px;
   }
 
   .cloud {
@@ -272,8 +229,15 @@ body {
     height: 200px;
   }
 
+  .socialMediaDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+  }
   /* button from SASS */
-
+  
   
   a {
     text-decoration: none;

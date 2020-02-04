@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="600px.css">
+    <link rel="stylesheet" href="400px.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <title>stephanie chen</title>
     <link rel="icon" href="images/star.png">
+    <script type="text/javascript" src="script.js"></script>
 
 </head>
 <body>
@@ -32,14 +36,10 @@
             <h2 style="line-height: 300%; text-transform: uppercase; letter-spacing: 0.5em;">hello world, I'm</h2>
             </div>
             <div class="fill"></div>
-            <div class="words" id="intro" style="line-height: 200%; text-align: left; margin-left: 50px;">
-                / * an enthusiastic, hardworking second-year engineering student at the <br> &nbsp;&nbsp;&nbsp;&nbsp; University of British Columbia,
-                passionate about building software <br> &nbsp;&nbsp;&nbsp; that can make a difference in people's lives * /
+            <div class="words" id="intro" style="line-height: 200%; text-align: left; margin-left: 8%; margin-right: 8%;">
+                / * an enthusiastic, hardworking second-year engineering student at the University of British Columbia,
+                passionate about building software that can make a difference in people's lives * /
             </div> 
-            <div class="words" id="intro-small" style="line-height: 200%; text-align: left; margin-left: 50px;">
-              / * an enthusiastic, hardworking second-year engineering student at the University of British Columbia,
-              passionate about building software that can make a difference in people's lives * /
-          </div> 
 
             <!-- button from SASS, credit: codepen.io -->
 
@@ -67,42 +67,36 @@
     <div>
     <div class="flex-container">
         <div class="flex-item" id="moody" style="border-color: #d3f6f3;">
+          <a href="projects.html">
             <h2 style="text-transform: uppercase; letter-spacing: 0.5em;">Moody Chat</h2>
             <div class="words">for UBC nwHacks</div>
             
             <!--<button class="button" onclick="alert('Hello world')">click me</button> -->
 
             <div class="words" style="margin: 30% 5% 2% 5%;">a web application messenger helping Asperger's patients</div>
-            
+          
         </div>
+      </a>
 
         <div class="flex-item" id="mentr" style="border-color: #fee9b2;">
+          <a href="projects.html">
             <h2 style="text-transform: uppercase; letter-spacing: 0.5em;">Mentr</h2>
             <div class="words">for UBC Local Hack Day</div>
             <div class="words" style="margin: 30% 5% 2% 5%;">an iOS application pairing high school students to univserity-level mentors</div>
-                
+          </a>
         </div>
 
         <div class="flex-item" id="husky" style="border-color: #fbd1b7;">
+          <a href="projects.html">
             <h2 style="text-transform: uppercase; letter-spacing: 0.5em;">Husky Dashboard</h2>
             <div class="words">for Husky Energy, 2019</div>
             <div class="words" style="margin: 30% 5% 2% 5%;">a responsive Spotfire data analytics dashboard to forecast key metrics</div>
-           
+          </a>
         </div>
     </div>
     </div>
     
-    <h5 style="margin:1%">made with puppy love by stephanie chen, 2020</h5>
+    <h5 style="margin:5%">made with love by stephanie chen, 2020</h5>
 
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-        </script>
 </body>
 </html>
