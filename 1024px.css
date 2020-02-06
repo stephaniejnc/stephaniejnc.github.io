@@ -1,0 +1,25 @@
+@media screen and (max-width: 1025px) {
+
+    .words {
+        font-size: 14px;
+    }
+
+    .flex-item {
+        width: 40%;
+    }
+
+    .profile {
+        background-size: cover;
+        height: 400px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .aboutPage {
+        width: 80%;
+        margin-top: 15%;
+    }
+
+}

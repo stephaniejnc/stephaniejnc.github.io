@@ -18,7 +18,13 @@
       height: 100%;
       margin-top: 5%;
       margin-bottom: 5%;
+      line-height: 30px;
 
+    }
+
+    .profile {
+      background-size: contain;
+      height: 200px;
     }
 
     .words {
@@ -89,4 +95,31 @@
       text-align: left;
       margin-left: 8%;
     }
+
+    .mentrPic {
+      overflow: hidden;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('images/mentr.png');
+      width: 200px;
+      height: 400px;
+    }
+
+    .mentrMedia, .moodyMedia, .huskyMedia {
+      width: 92%;
+    }
+
+    .mentrMedia {
+      flex-direction: row;
+    }
+
+    .moodyProject {
+      flex-direction: column-reverse;
+    }
+
+    .moodyProjectBox {
+      margin: 0%;
+    }
+
   }

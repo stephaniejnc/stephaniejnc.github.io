@@ -46,6 +46,8 @@ ol, ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     /* justify-content: space-around; */
 }
 
@@ -56,8 +58,8 @@ ol, ul {
   height: 30vw;
   margin-top: 10px;
   border-radius: 5%;
-  border-color: lightcoral;
-  border-style: dotted;
+  border-color: #fee9b2;
+  border-style: double;
   border-width: 0.2cm;
 
   line-height: 40px;
@@ -66,7 +68,12 @@ ol, ul {
   flex-direction: column;
   justify-content: center;
   transition: 0.5s;
+  align-items: center;
 
+}
+
+#noBorder {
+  border-style: none;
 }
 
 .link {
@@ -78,6 +85,7 @@ ol, ul {
   height: 50px;
   margin: 10px;
 }
+
 .devpost {
   background-image: url('http://nealrs.github.io/devpost-follow-button/icon/devpost-512.png');
 }
@@ -88,15 +96,35 @@ ol, ul {
   height: 45px;
 }
 
+.linkedin {
+  background-image: url('images/linkedin.png');
+  width: 45px;
+  height: 45px;
+}
+
+.email {
+  background-image: url('images/email.png');
+  width: 45px;
+  height: 45px;
+}
+
+.facebook {
+  background-image: url('images/facebook.png');
+  width: 45px;
+  height: 45px;
+}
+
 #moody, #mentr, #husky {
   color: #444444;
-  border-style: dotted; 
+  border-style: double; 
+  border-color: #fee9b2;
   font-weight: bold;
 }
 
 
 #moody.flex-item:hover {
-  background-color: #d3f6f3;
+  background-color: #fee9b2;
+  /* background-color: #d3f6f3; */
 }
 
 #mentr.flex-item:hover {
@@ -104,7 +132,8 @@ ol, ul {
 }
 
 #husky.flex-item:hover {
-  background-color: #fbd1b7;
+  background-color: #fee9b2;
+  /* background-color: #fbd1b7; */
 }
 
 
@@ -112,6 +141,10 @@ ol, ul {
   margin: 5%;
   width: 40%;
   margin-top: 25px;
+}
+
+.aboutPage {
+  width: 50%;
 }
 
 .flex-item-picture {
@@ -225,8 +258,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('images/profile.jpg');
-    width: 100%;
-    height: 200px;
+    width: 120%;
+    height: 150%;
   }
 
   .socialMediaDiv {
@@ -236,6 +269,40 @@ body {
     align-items: center;
     width: 100%
   }
+
+  .mentrPic {
+    overflow: hidden;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('images/mentr.png');
+    width: 50%;
+    height: 100%;
+  }
+
+  .moodyPic {
+    overflow: hidden;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('images/moody.png');
+    /* width: 100%;
+    height: 100%; */
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .moodyProjectBox {
+    margin: 5%;
+    border-color: #c9daf9;
+  }
+
+  .mentrMedia, .moodyMedia, .huskyMedia {
+    flex-direction: row;
+    width: 38%;
+  }
+
   /* button from SASS */
   
   
@@ -294,3 +361,5 @@ body {
     justify-content: center;
     position: relative;
   }
+
+  
