@@ -145,6 +145,7 @@ ol, ul {
 
 .aboutPage {
   width: 50%;
+  padding-top: 130px;
 }
 
 .flex-item-picture {
@@ -257,7 +258,7 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('images/profile.JPG');
+    background-image: url('images/profile.jpg');
     width: 120%;
     height: 150%;
   }
